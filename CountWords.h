@@ -14,7 +14,7 @@ public:
 
 private:
     vector<WordCount> uniqueWords;
-    findWord(vector<WordCount> words, string word);
+    int findWord(vector<WordCount> words, string word);
 
 };
 
