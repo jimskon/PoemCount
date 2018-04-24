@@ -24,11 +24,8 @@ void CountWords::display() {
     }
 }
 
-bool compare(WordCount a, WordCount b) {
-    return a.getWord() < b.getWord();
-}
 void CountWords::sort() {
-    std::sort(uniqueWords.begin(),uniqueWords.end(),compare);
+    std::sort(uniqueWords.begin(),uniqueWords.end());
 }
 int CountWords::findWord(vector<WordCount> words, string word) {
 

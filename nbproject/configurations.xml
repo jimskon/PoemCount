@@ -42,6 +42,11 @@
         <ccTool>
           <standard>11</standard>
         </ccTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
       </compileType>
       <item path="CountWords.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -73,6 +78,11 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
       </compileType>
       <item path="CountWords.cpp" ex="false" tool="1" flavor2="0">
       </item>

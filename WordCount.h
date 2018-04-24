@@ -13,6 +13,7 @@ public:
     void inc();
     int getCount();
     string getWord();
+    friend bool operator<(WordCount w1, WordCount w2);
  
 };
 #endif /* WORDCOUNT_H */

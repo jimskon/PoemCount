@@ -18,3 +18,7 @@
         return word;
     }
     
+    bool operator<(WordCount w1, WordCount w2) {
+        return (w1.count>w2.count);
+    }
+    
