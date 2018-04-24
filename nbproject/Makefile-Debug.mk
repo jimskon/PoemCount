@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/CountWords.o \
 	${OBJECTDIR}/CountWordsInPoem.o \
+	${OBJECTDIR}/StopWords.o \
 	${OBJECTDIR}/WordCount.o
 
 
@@ -73,6 +74,11 @@ ${OBJECTDIR}/CountWordsInPoem.o: CountWordsInPoem.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CountWordsInPoem.o CountWordsInPoem.cpp
+
+${OBJECTDIR}/StopWords.o: StopWords.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StopWords.o StopWords.cpp
 
 ${OBJECTDIR}/WordCount.o: WordCount.cpp
 	${MKDIR} -p ${OBJECTDIR}

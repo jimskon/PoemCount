@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include "WordCount.h"
+#include "StopWords.h"
 
 #ifndef COUNTWORDS_H
 #define COUNTWORDS_H
@@ -15,6 +16,7 @@ public:
 private:
     vector<WordCount> uniqueWords;
     int findWord(vector<WordCount> words, string word);
+    StopWords theStopWords;
 
 };
 
